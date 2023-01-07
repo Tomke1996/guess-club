@@ -53,7 +53,7 @@ function randomWords() {
 //  Hide Hint Text
     hintText.classList.remove('active');
     let randomWord = currentWordArray[Math.floor(Math.random() * currentWordArray.length)];
-    console.log(randomWord);
+//     console.log(randomWord);
     words = randomWord.club;
     correctWords = [];
     incorrectWords = [];
@@ -81,9 +81,6 @@ function randomWords() {
       }
       inputs.innerHTML = html;     
 }
-
-// On Load
-// randomWords();
 
 function initGame(e) {
     if (e.key === 'Enter') {
