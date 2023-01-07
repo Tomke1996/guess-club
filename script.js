@@ -50,6 +50,7 @@ function getRadioValue() {
 function randomWords() {
     homePage.hidden = true;
     gamePage.hidden = false;
+    hintText.classList.remove('active');
     let randomWord = currentWordArray[Math.floor(Math.random() * currentWordArray.length)];
     console.log(randomWord);
     words = randomWord.club;
