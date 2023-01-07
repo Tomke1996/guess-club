@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Game</title>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>Guess The Club</h1>
+
+        <div class="container" id="homePage">
+            <h3>Select a League</h3>
+            <form id="form">
+                <div class="leagues-box">
+                    <div class="league">
+                        <img src="https://a1.espncdn.com/combiner/i?img=%2Fi%2Fleaguelogos%2Fsoccer%2F500%2F23.png" alt="Premier League">
+                        <input type="radio" class="radio" name="league" value="premierLeague">
+                    </div>
+                    <div class="league">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/LaLiga_logo_%28stacked%29.svg/1200px-LaLiga_logo_%28stacked%29.svg.png" alt="La Liga">
+                        <input type="radio" class="radio" name="league" value="laLiga">
+                    </div>
+                    <div class="league">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/12.png" alt="Seria A">
+                        <input type="radio" class="radio" name="league" value="seriaA">
+                    </div>
+                    <div class="league">
+                        <img src="https://a2.espncdn.com/combiner/i?img=%2Fi%2Fleaguelogos%2Fsoccer%2F500%2F10.png" alt="Bundesliga">
+                        <input type="radio" class="radio" name="league" value="bundesLiga">
+                    </div>
+                </div>
+                <button type="submit" class="submitBtn">Submit</button>
+            </form>
+        </div>
+
+        <div class="wrapper" id="gamePage" hidden>
+            <button class="backBtn"><i class="fas fa-arrow-left"></i></button>
+            <div class="inputs"></div>
+            <div class="details">
+                <div class="hint-box">
+                    <button class="hintBtn">Hint</button>
+                    <p id="hintText"></p>
+                </div>
+                <p class="guess-left"> </p>
+                <p class="wrong-words">Wrong letters: <span></span></p>
+                <div class="letter-box">
+                    <p>letter:</p>
+                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="text" class="wordInput" maxlength="1">
+                </div>
+            </div>
+            <button class="reset">Reset Words</button>
+        </div>
+    </div>
+    
+    <!-- JS -->
+    <script src="clubs.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
