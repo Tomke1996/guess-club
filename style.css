@@ -45,8 +45,8 @@ h3 {
 }
 
 .league {
-    width: 130px;
-    height: 180px;
+    width: 150px;
+    height: 200px;
     overflow: hidden;
     cursor: pointer;
 }
@@ -204,6 +204,13 @@ h1 {
 @media screen and (max-width: 450px) {
     .game-container {
         width: 95%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .league {
+        width: 130px;
+        height: 180px;
     }
 }
 
